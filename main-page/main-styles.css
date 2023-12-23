@@ -32,7 +32,7 @@ body {
 }
 
 /*background: linear-gradient(132deg, #93DEFA 70%, #6FD1FF 100%);*/
-.student-container{
+.student-container {
   flex: 1;
   display: flex;
   flex-wrap: wrap;
@@ -41,16 +41,27 @@ body {
   padding-right: 50px;
 }
 
-#student-box{
+#student-box {
   height: 100px;
   width: 100%;
   background: linear-gradient(132deg, #93DEFA 0%, #6FD1FF 100%);
   box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.05);
   border-radius: 25px;
   overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 20px;
 }
 
-#student-img{
+#separator{
+  height: 75px;
+  width: 2px;
+  background-color: #29A7E1;
+}
+
+#student-img {
   width: 100px;
   height: 100px;
   border-radius: 25px;
