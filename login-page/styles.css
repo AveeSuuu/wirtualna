@@ -24,10 +24,15 @@ body {
   align-items: center;
   height: 100%;
   background-image: url('../resources/bg_1.png');
-  opacity: 1;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out
+}
+
+.middle-container.disappear{
+  opacity: 0;
 }
 
 .login-window {

@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 500);
 
     document.querySelector(".login-window").classList.add("disappear");
+    document.querySelector(".middle-container").classList.add("disappear");
 
     setTimeout(function(){
       window.location.href = "../main-page/main-page.html";
