@@ -6,7 +6,11 @@ Redesign designu wirtulanej uczelnii dla Akademii Mazowieckiej w Płocku.
 Rok akademicki 2023/24
 
 ## 🛠 Narzędzia
-Javascript, HTML, CSS
+<p align="left">
+  <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer">
+    <img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-original.svg">
+  </a>
+</p>
 
 ## Paleta kolorów
 
@@ -19,8 +23,6 @@ Javascript, HTML, CSS
 | Bg_additional | ![#D6D6D6](https://via.placeholder.com/10/D6D6D6?text=+) #D6D6D6 |
 | Contrast | ![#FDC800](https://via.placeholder.com/10/FDC800?text=+) #FDC800 |
 | Contrast_additional | ![#FFE379](https://via.placeholder.com/10/FFE379?text=+) #FFE379 |
-
-
 
 ## Twórcy
 
