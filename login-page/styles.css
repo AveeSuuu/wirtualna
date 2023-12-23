@@ -24,6 +24,7 @@ body {
   align-items: center;
   height: 100%;
   background-image: url('../resources/bg_1.png');
+  opacity: 1;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
