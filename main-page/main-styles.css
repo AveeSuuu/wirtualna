@@ -25,10 +25,16 @@ body {
   background: linear-gradient(125deg, #93DEFA 0%, #29A7E1 100%);
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
   box-sizing: border-box;
+  padding-left: 80px;
+  padding-right: 80px;
   z-index: 2;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+}
+
+#separating-box{
+  width: 15%;
 }
 
 /*background: linear-gradient(132deg, #93DEFA 70%, #6FD1FF 100%);*/
@@ -42,6 +48,7 @@ body {
 }
 
 #student-box {
+  color: #002147;
   height: 100px;
   width: 100%;
   background: linear-gradient(132deg, #93DEFA 0%, #6FD1FF 100%);
@@ -50,21 +57,79 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-content: center;
   gap: 20px;
 }
 
-#separator{
+#separator {
+  align-self: center;
   height: 75px;
   width: 2px;
   background-color: #29A7E1;
+}
+
+#student-dane1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+#student-imie-nazwisko{
+  font-size: 2rem;
+}
+
+.student-font{
+  font-size: 1rem;
 }
 
 #student-img {
   width: 100px;
   height: 100px;
   border-radius: 25px;
+}
+
+.more-options-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.more-options {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  gap: 15px;
+}
+
+.option {
+  font-size: 1rem;
+  color: hsl(196, 91%, 90%);
+  display: flex;
+  align-content: center;
+  gap: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.option.appear{
+  opacity: 1;
+}
+
+#more-options-href{
+  cursor: pointer;
+  transition: color 0.1s ease-in-out;
+}
+
+#more-options-href:hover{
+  color: #FDC800;
+}
+
+#more-options-href:active{
+  color: hsl(196, 91%, 100%);
 }
 
 .middle-container {
@@ -142,14 +207,14 @@ body {
 
 #mazowiecka-text1 {
   font-size: 3.2rem;
-  text-align: right;
+  text-align: left;
   color: white;
   line-height: 1;
 }
 
 #mazowiecka-text2 {
   font-size: 1.1rem;
-  text-align: right;
+  text-align: left;
   color: white;
   line-height: 1.5;
 }
