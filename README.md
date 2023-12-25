@@ -1,7 +1,7 @@
 
 # Projekt - Wirtualna Uczelnia
 
-Redesign designu wirtulanej uczelnii dla Akademii Mazowieckiej w Płocku.
+Redesign wirtulanej uczelnii dla Akademii Mazowieckiej w Płocku.
 
 Rok akademicki 2023/24
 
