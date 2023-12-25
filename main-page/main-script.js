@@ -3,12 +3,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const containers = document.querySelectorAll(".container-box");
   const moreOptions = document.querySelectorAll(".option");
+  const studentBoxItems = document.querySelectorAll(".box-animation");
 
   containers.forEach(function (container, index) {
     setTimeout(function () {
       container.classList.add("appear");
     }, index * 100);
   });
+
+  setTimeout(function(){
+    studentBoxItems.forEach(function (item, index){
+      setTimeout(function(){
+        item.classList.add("appear");
+      }, index*250);
+    })
+  }, 1000);
 
   moreOptions.forEach(function (option, index){
     setTimeout(function (){
