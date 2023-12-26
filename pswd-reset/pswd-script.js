@@ -1,26 +1,40 @@
 document.addEventListener("DOMContentLoaded", function () {
   setTimeout(function () {
-    document.querySelector(".login-window").classList.add("appear");
-  }, 1000);
+    document.getElementById("top").classList.add("appear");
+    document.getElementById("bottom").classList.add("appear");
+  }, 500);
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const loginButton = document.getElementById("login-button");
-  const decorativeUp = document.getElementById("decorative-up");
+  const returnButton = document.getElementById("return-href");
 
-  loginButton.addEventListener("click", function () {
-
-    setTimeout(function(){
-      decorativeUp.style.height = "175px";
-    }, 500);
+  returnButton.addEventListener("click", function () {
 
     document.querySelector(".login-window").classList.add("disappear");
-    document.querySelector(".middle-container").classList.add("disappear");
 
-    setTimeout(function(){
-      window.location.href = "../main-page/main-page.html";
-    }, 1500);
+    setTimeout(function () {
+      window.location.href = "../login-page/index.html";
+    }, 550);
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const sendButton = document.getElementById("send-button");
+
+  sendButton.addEventListener("click", function () {
+    document.getElementById("top").classList.add("disappear");
+    document.getElementById("bottom").classList.add("disappear");
+
+    const mainWindow = document.getElementById("pswd-reset-window");
+
+    setTimeout(function () {
+      mainWindow.classList.toggle("size-change");
+    }, 500);
+
+    setTimeout(function () {
+      window.location.href = "../pswd-reset/pswd-sent.html";
+    }, 1050);
+  });
+})
 
 

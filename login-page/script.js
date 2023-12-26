@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   setTimeout(function () {
     document.querySelector(".login-window").classList.add("appear");
-  }, 1000);
+  }, 500);
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -21,6 +21,20 @@ document.addEventListener("DOMContentLoaded", function () {
       window.location.href = "../main-page/main-page.html";
     }, 1500);
   });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const resetPasswordHref = document.getElementById("href-password-reset");
+  
+  resetPasswordHref.addEventListener("click", function(){
+
+    document.getElementById("top").classList.add("disappear");
+    document.getElementById("bottom").classList.add("disappear");
+
+    setTimeout(function(){
+      window.location.href ="../pswd-reset/pswd-reset.html"; 
+    }, 550);
+  });  
 });
 
 
