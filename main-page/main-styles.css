@@ -51,10 +51,10 @@ body {
 }
 
 .student-box {
-  color: #002147;
+  color: #FEFEFE;
   height: 100px;
   width: 100px;
-  background: linear-gradient(132deg, #93DEFA 0%, #6FD1FF 100%);
+  background: linear-gradient(132deg, #29A7E1 0%, #2291C5 100%);
   box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.05);
   border-radius: 25px;
   overflow: hidden;
@@ -88,7 +88,7 @@ body {
   align-self: center;
   height: 75px;
   width: 2px;
-  background-color: #29A7E1;
+  background-color: #FEFEFE;
 }
 
 #student-dane1{
@@ -174,23 +174,38 @@ body {
   display: grid;
   justify-content: center;
   align-content: center;
-  grid-template-columns: repeat(3, 0fr);
+  grid-template-columns: repeat(2, 0fr);
   grid-template-rows: repeat(2, 0fr);
   gap: 30px;
 }
 
-.container-box {
-  width: 30vw;
-  height: 30vh;
-  border-radius: 25px;
-  background-color: #29A7E1;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
+/*==========================================================*/
+/*==========================================================*/
+/*==========================================================*/
+
+.inside-container{
+  width: 500px;
+  height: 250px;
 }
 
-.container-box.appear {
-  opacity: 1;
+.panel-option{
+  background-color:  #29A7E1;
+  font-size: 2.5rem;
+  color: #FEFEFE;
 }
+
+#container1{
+  background-color: #29a7e1;
+}
+
+#wyniki-studenta{
+
+  
+}
+
+/*==========================================================*/
+/*==========================================================*/
+/*==========================================================*/
 
 .decorative-down {
   width: 100%;
