@@ -2,15 +2,15 @@ document.addEventListener("DOMContentLoaded", function () {
   document.querySelector(".top").classList.add("appear");
   document.querySelector(".student-container").classList.add("appear");
   const containers = document.querySelectorAll(".panel-option");
-  
+
   containers.forEach(function (container, index) {
     setTimeout(function () {
       container.classList.add("appear");
     }, 200 * index);
   });
-  
+
   const studentBoxItems = document.querySelectorAll(".box-animation");
-  
+
   setTimeout(function () {
     studentBoxItems.forEach(function (item, index) {
       setTimeout(function () {
@@ -18,9 +18,9 @@ document.addEventListener("DOMContentLoaded", function () {
       }, index * 150);
     })
   }, 1000);
-  
+
   const moreOptions = document.querySelectorAll(".option");
-  
+
   moreOptions.forEach(function (option, index) {
     setTimeout(function () {
       option.classList.add("appear");
@@ -29,25 +29,25 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  
-  const logOutButton = document.getElementById("log-out-button");
-  logOutButton.addEventListener("click", function(){
-    document.querySelector(".top").classList.add("disappear");
-    document.querySelector(".student-container").classList.add("disappear");
-    document.querySelector(".more-options-container").classList.add("disappear");
 
-    setTimeout(function(){
-      document.querySelector(".grid-container").classList.add("disappear");
+  const logOutButton = document.getElementById("log-out-button");
+  logOutButton.addEventListener("click", function () {
+    document.querySelector(".grid-container").classList.add("disappear");
+
+    setTimeout(function () {
+      document.querySelector(".top").classList.add("disappear");
+      document.querySelector(".student-container").classList.add("disappear");
+      document.querySelector(".more-options-container").classList.add("disappear");
     }, 250);
 
-    setTimeout(function(){
-      document.getElementById("decorative-up").style.height = "60px";
+    setTimeout(function () {
       const mainContainer = document.querySelector(".main-container");
       mainContainer.classList.add("show-background");
       updateBackgroundOpacity(mainContainer, 1);
-    }, 500);
+      document.getElementById("decorative-up").style.height = "60px";
+    }, 750);
 
-    setTimeout(function(){
+    setTimeout(function () {
       window.location.href = "../login-page/index.html";
     }, 1000);
   });

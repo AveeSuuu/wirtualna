@@ -20,7 +20,7 @@ body {
   transition: background-image 5s ease-in-out;
 }
 
-.main-container::before{
+.main-container::before {
   content: "";
   width: 100vw;
   height: 100vh;
@@ -34,7 +34,7 @@ body {
   z-index: -1;
 }
 
-.main-container.show-background::before{
+.main-container.show-background::before {
   opacity: 1;
 }
 
@@ -53,7 +53,7 @@ body {
   transition: height 0.5s ease-in-out;
 }
 
-#separating-box{
+#separating-box {
   width: 15%;
 }
 
@@ -72,11 +72,11 @@ body {
   transition: opacity 0.5s ease-in-out;
 }
 
-.student-container.appear{
+.student-container.appear {
   opacity: 1;
 }
 
-.student-container.disappear{
+.student-container.disappear {
   opacity: 0;
 }
 
@@ -96,21 +96,22 @@ body {
   animation: slideRight 1s ease-in-out forwards;
 }
 
-@keyframes slideRight{
-  0%{
+@keyframes slideRight {
+  0% {
     width: 100px;
   }
-  100%{
+
+  100% {
     width: 1050px;
   }
 }
 
-.box-animation{
+.box-animation {
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
 }
 
-.box-animation.appear{
+.box-animation.appear {
   opacity: 1;
 }
 
@@ -121,7 +122,7 @@ body {
   background-color: #FEFEFE;
 }
 
-#student-dane1{
+#student-dane1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -129,15 +130,15 @@ body {
   flex-wrap: nowrap;
 }
 
-#student-imie-nazwisko{
+#student-imie-nazwisko {
   font-size: 2rem;
 }
 
-.student-font{
+.student-font {
   font-size: 1rem;
 }
 
-#student-dane2{
+#student-dane2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -158,7 +159,7 @@ body {
   transition: opacity 0.5s ease-in-out;
 }
 
-.more-options-container.disappear{
+.more-options-container.disappear {
   opacity: 0;
 }
 
@@ -180,20 +181,20 @@ body {
   transition: opacity 0.3s ease-in-out;
 }
 
-.option.appear{
+.option.appear {
   opacity: 1;
 }
 
-.more-options-href{
+.more-options-href {
   cursor: pointer;
   transition: color 0.1s ease-in-out;
 }
 
-.more-options-href:hover{
+.more-options-href:hover {
   color: #FDC800;
 }
 
-.more-options-href:active{
+.more-options-href:active {
   color: hsl(196, 91%, 100%);
 }
 
@@ -215,30 +216,30 @@ body {
   transition: opacity 0.5s ease-in-out;
 }
 
-.grid-container.disappear{
+.grid-container.disappear {
   opacity: 0;
 }
 
 /*==========================================================*/
 /*==========================================================*/
 
-.inside-container{
+.inside-container {
   width: 900px;
   height: 400px;
   transition: opacity 0.5s ease-in-out;
   opacity: 1;
 }
 
-.inside-container.appear{
+.inside-container.appear {
   opacity: 1;
 }
 
-.panel-option{
+.panel-option {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-  background-color:  #29A7E1;
+  background-color: #29A7E1;
   font-size: 2.5rem;
   color: #FEFEFE;
   background-size: cover;
@@ -252,26 +253,26 @@ body {
   cursor: pointer;
 }
 
-.panel-option:hover{
+.panel-option:hover {
   font-size: 2.6rem;
   color: #FDC800;
 }
 
-.panel-option:active{
+.panel-option:active {
   color: hsl(196, 91%, 100%);
 }
 
-.panel-option.appear{
+.panel-option.appear {
   opacity: 1;
 }
 
 /*==========================================================*/
 
-#container1{
+#container1 {
   display: flex;
 }
 
-#wyniki-studenta{
+#wyniki-studenta {
   border-top-left-radius: 25px;
   width: 100%;
   height: 100%;
@@ -293,19 +294,19 @@ body {
 
 /*==========================================================*/
 
-#container2{
+#container2 {
   display: flex;
   flex-direction: row;
   gap: 20px;
 }
 
-#plan-zajec{
+#plan-zajec {
   width: 50%;
   height: 100%;
   background-image: url("../resources/plan-zajec.png");
 }
 
-#plan-zajec:before{
+#plan-zajec:before {
   content: "PLAN ZAJĘĆ";
   width: 100%;
   height: 100%;
@@ -317,14 +318,14 @@ body {
   align-content: center;
 }
 
-#wiadomosci{
+#wiadomosci {
   border-top-right-radius: 25px;
   width: 50%;
   height: 100%;
   background-image: url("../resources/wiadomosci.png");
 }
 
-#wiadomosci:before{
+#wiadomosci:before {
   border-top-right-radius: 25px;
   content: "WIADOMOŚCI";
   width: 100%;
@@ -339,20 +340,20 @@ body {
 
 /*==========================================================*/
 
-#container3{
+#container3 {
   display: flex;
   flex-direction: row;
   gap: 20px;
 }
 
-#finanse{
+#finanse {
   width: 50%;
   height: 100%;
   background-image: url("../resources/finanse.png");
   border-bottom-left-radius: 25px;
 }
 
-#finanse:before{
+#finanse:before {
   border-bottom-left-radius: 25px;
 
   content: "FINANSE";
@@ -366,13 +367,13 @@ body {
   align-content: center;
 }
 
-#biuro-karier{
+#biuro-karier {
   width: 50%;
   height: 100%;
   background-image: url("../resources/biuro-karier.png");
 }
 
-#biuro-karier:before{
+#biuro-karier:before {
   content: "WIADOMOŚCI";
   width: 100%;
   height: 100%;
@@ -386,26 +387,26 @@ body {
 
 /*==========================================================*/
 
-#container4{
+#container4 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 20px;
 }
 
-#kalendarz, 
-#ankiety, 
-#zapisy, 
-#wnioski{
+#kalendarz,
+#ankiety,
+#zapisy,
+#wnioski {
   width: 100%;
   height: 100%;
 }
 
-#kalendarz{
+#kalendarz {
   background-image: url("../resources/kalendarz.png");
 }
 
-#kalendarz:before{
+#kalendarz:before {
   content: "KALENDARZ";
   width: 100%;
   height: 100%;
@@ -417,11 +418,11 @@ body {
   align-content: center;
 }
 
-#ankiety{
+#ankiety {
   background-image: url("../resources/ankiety.png");
 }
 
-#ankiety:before{
+#ankiety:before {
   content: "ANKIETY";
   width: 100%;
   height: 100%;
@@ -433,11 +434,11 @@ body {
   align-content: center;
 }
 
-#zapisy{
+#zapisy {
   background-image: url("../resources/zapisy.png");
 }
 
-#zapisy:before{
+#zapisy:before {
   content: "ZAPISY";
   width: 100%;
   height: 100%;
@@ -449,12 +450,12 @@ body {
   align-content: center;
 }
 
-#wnioski{
+#wnioski {
   background-image: url("../resources/wnioski.png");
   border-bottom-right-radius: 25px;
 }
 
-#wnioski:before{
+#wnioski:before {
   border-bottom-right-radius: 25px;
   content: "WNIOSKI";
   width: 100%;
@@ -508,7 +509,7 @@ body {
   opacity: 1;
 }
 
-.top.disappear{
+.top.disappear {
   opacity: 0;
 }
 
