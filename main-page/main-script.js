@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
   containers.forEach(function (container, index) {
     setTimeout(function () {
       container.classList.add("appear");
-    }, 100 * index);
+    }, 200 * index);
   });
   
   const studentBoxItems = document.querySelectorAll(".box-animation");
