@@ -185,6 +185,12 @@ body {
 .inside-container{
   width: 700px;
   height: 300px;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+}
+
+.inside-container.appear{
+  opacity: 1;
 }
 
 .panel-option{
@@ -198,6 +204,12 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.panel-option.appear{
+  opacity: 1;
 }
 
 /*==========================================================*/
