@@ -7,7 +7,7 @@
 body {
   overflow: hidden;
   margin: 0;
-  background-color: #FEFEFE;
+  background-color: rgba(254, 254, 254, 1);
   display: flex;
   /* #002147 */
 }
@@ -17,9 +17,28 @@ body {
   height: 100vh;
   display: flex;
   flex-flow: column;
+  transition: background-image 5s ease-in-out;
 }
 
-.decorative-up {
+.main-container::before{
+  content: "";
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-image: url("../resources/bg_1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  z-index: -1;
+}
+
+.main-container.show-background::before{
+  opacity: 1;
+}
+
+#decorative-up {
   width: 100vw;
   height: 175px;
   background: linear-gradient(125deg, #93DEFA 0%, #29A7E1 100%);
@@ -31,6 +50,7 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  transition: height 0.5s ease-in-out;
 }
 
 #separating-box{
@@ -48,6 +68,16 @@ body {
   padding-right: 50px;
   min-width: 100px;
   max-width: 1050px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.student-container.appear{
+  opacity: 1;
+}
+
+.student-container.disappear{
+  opacity: 0;
 }
 
 .student-box {
@@ -125,6 +155,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.more-options-container.disappear{
+  opacity: 0;
 }
 
 .more-options {
@@ -149,16 +184,16 @@ body {
   opacity: 1;
 }
 
-#more-options-href{
+.more-options-href{
   cursor: pointer;
   transition: color 0.1s ease-in-out;
 }
 
-#more-options-href:hover{
+.more-options-href:hover{
   color: #FDC800;
 }
 
-#more-options-href:active{
+.more-options-href:active{
   color: hsl(196, 91%, 100%);
 }
 
@@ -177,14 +212,19 @@ body {
   grid-template-columns: repeat(2, 0fr);
   grid-template-rows: repeat(2, 0fr);
   gap: 20px;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.grid-container.disappear{
+  opacity: 0;
 }
 
 /*==========================================================*/
 /*==========================================================*/
 
 .inside-container{
-  width: 700px;
-  height: 300px;
+  width: 900px;
+  height: 400px;
   transition: opacity 0.5s ease-in-out;
   opacity: 1;
 }
@@ -206,13 +246,14 @@ body {
   background-repeat: no-repeat;
   transition:
     opacity 0.5s ease-in-out,
-    font-size 0.2s ease-in-out;
+    font-size 0.3s ease-in-out,
+    color 0.2s ease-in-out;
   opacity: 0;
   cursor: pointer;
 }
 
 .panel-option:hover{
-  font-size: 3rem;
+  font-size: 2.6rem;
   color: #FDC800;
 }
 
@@ -460,11 +501,15 @@ body {
   gap: 15px;
   padding-right: 23px;
   opacity: 0;
-  transition: opacity 1s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .top.appear {
   opacity: 1;
+}
+
+.top.disappear{
+  opacity: 0;
 }
 
 #text-div {
