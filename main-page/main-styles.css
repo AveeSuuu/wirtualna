@@ -54,7 +54,7 @@ body {
 }
 
 #separating-box {
-  width: 15%;
+  width: 5%;
 }
 
 /*background: linear-gradient(132deg, #93DEFA 70%, #6FD1FF 100%);*/
@@ -128,10 +128,11 @@ body {
   justify-content: center;
   align-content: center;
   flex-wrap: nowrap;
+  width: 25%;
 }
 
 #student-imie-nazwisko {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .student-font {
@@ -224,8 +225,8 @@ body {
 /*==========================================================*/
 
 .inside-container {
-  width: 900px;
-  height: 400px;
+  width: 700px;
+  height: 300px;
   transition: opacity 0.5s ease-in-out;
   opacity: 1;
 }
