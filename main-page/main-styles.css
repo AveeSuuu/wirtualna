@@ -215,6 +215,11 @@ body {
   grid-template-rows: repeat(2, 0fr);
   gap: 20px;
   transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+}
+
+.grid-container.appear{
+  opacity: 1;
 }
 
 .grid-container.disappear {
@@ -247,7 +252,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   transition:
-    opacity 0.5s ease-in-out,
+    opacity 1s ease-in-out,
     font-size 0.3s ease-in-out,
     color 0.2s ease-in-out;
   opacity: 0;

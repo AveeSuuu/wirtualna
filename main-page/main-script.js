@@ -1,23 +1,26 @@
 document.addEventListener("DOMContentLoaded", function () {
   document.querySelector(".top").classList.add("appear");
   document.querySelector(".student-container").classList.add("appear");
+  
   const containers = document.querySelectorAll(".panel-option");
-
   containers.forEach(function (container, index) {
     setTimeout(function () {
       container.classList.add("appear");
-    }, 200 * index);
+    }, 100 * index+1);
   });
+  /*
+  document.querySelector(".grid-container").classList.add("appear");
+  */
 
   const studentBoxItems = document.querySelectorAll(".box-animation");
-
   setTimeout(function () {
     studentBoxItems.forEach(function (item, index) {
       setTimeout(function () {
         item.classList.add("appear");
-      }, index * 150);
+      }, 0);
     })
   }, 1000);
+
 
   const moreOptions = document.querySelectorAll(".option");
 
