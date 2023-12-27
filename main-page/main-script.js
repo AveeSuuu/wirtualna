@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     setTimeout(function () {
       window.location.href = "../login-page/index.html";
-    }, 1000);
+    }, 1200);
   });
 });
 
