@@ -12,7 +12,7 @@ body {
   /* #002147 */
 }
 
-.main-container {
+#main-container {
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -20,7 +20,7 @@ body {
   transition: background-image 5s ease-in-out;
 }
 
-.main-container::before {
+#main-container::before {
   content: "";
   width: 100vw;
   height: 100vh;
@@ -34,7 +34,7 @@ body {
   z-index: -1;
 }
 
-.main-container.show-background::before {
+#main-container.show-background::before {
   opacity: 1;
 }
 
@@ -53,12 +53,53 @@ body {
   transition: height 0.5s ease-in-out;
 }
 
+#top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  padding-right: 23px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+#top.appear {
+  opacity: 1;
+}
+
+#top.disappear {
+  opacity: 0;
+}
+
+#mazowiecka-logo img {
+  width: 170px;
+  height: 170px;
+}
+
+#text-div {
+  display: flex;
+  flex-direction: column;
+}
+
+#mazowiecka-text1 {
+  font-size: 3.2rem;
+  text-align: left;
+  color: white;
+  line-height: 1;
+}
+
+#mazowiecka-text2 {
+  font-size: 1.1rem;
+  text-align: left;
+  color: white;
+  line-height: 1.5;
+}
+
 #separating-box {
   width: 5%;
 }
 
-/*background: linear-gradient(132deg, #93DEFA 70%, #6FD1FF 100%);*/
-.student-container {
+#student-container {
   flex: 1;
   display: flex;
   flex-wrap: wrap;
@@ -72,15 +113,15 @@ body {
   transition: opacity 0.5s ease-in-out;
 }
 
-.student-container.appear {
+#student-container.appear {
   opacity: 1;
 }
 
-.student-container.disappear {
+#student-container.disappear {
   opacity: 0;
 }
 
-.student-box {
+#student-box {
   color: #FEFEFE;
   height: 100px;
   width: 100px;
@@ -115,11 +156,10 @@ body {
   opacity: 1;
 }
 
-#separator {
-  align-self: center;
-  height: 75px;
-  width: 2px;
-  background-color: #FEFEFE;
+#student-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 25px;
 }
 
 #student-dane1 {
@@ -139,6 +179,13 @@ body {
   font-size: 1rem;
 }
 
+#separator {
+  align-self: center;
+  height: 75px;
+  width: 2px;
+  background-color: #FEFEFE;
+}
+
 #student-dane2 {
   display: flex;
   flex-direction: column;
@@ -146,13 +193,7 @@ body {
   align-content: center;
 }
 
-#student-img {
-  width: 100px;
-  height: 100px;
-  border-radius: 25px;
-}
-
-.more-options-container {
+#more-options-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -160,11 +201,11 @@ body {
   transition: opacity 0.5s ease-in-out;
 }
 
-.more-options-container.disappear {
+#more-options-container.disappear {
   opacity: 0;
 }
 
-.more-options {
+#more-options {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -199,14 +240,14 @@ body {
   color: hsl(196, 91%, 100%);
 }
 
-.middle-container {
+#middle-container {
   flex: 1;
   display: flex;
   justify-content: center;
   align-content: center;
 }
 
-.grid-container {
+#grid-container {
   top: 175px;
   display: grid;
   justify-content: center;
@@ -218,11 +259,11 @@ body {
   opacity: 1;
 }
 
-.grid-container.appear{
+#grid-container.appear{
   opacity: 1;
 }
 
-.grid-container.disappear {
+#grid-container.disappear {
   opacity: 0;
 }
 
@@ -477,7 +518,7 @@ body {
 /*==========================================================*/
 /*==========================================================*/
 
-.decorative-down {
+#decorative-down {
   width: 100%;
   height: 60px;
   padding-left: 50px;
@@ -492,53 +533,11 @@ body {
   z-index: 2;
 }
 
-.down-corner-text {
+#down-corner-text {
   color: white;
   font-size: 1rem;
   font-family: Segoe UI;
   font-weight: 400;
   word-wrap: break-word;
   text-align: right;
-}
-
-.top {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 15px;
-  padding-right: 23px;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.top.appear {
-  opacity: 1;
-}
-
-.top.disappear {
-  opacity: 0;
-}
-
-#text-div {
-  display: flex;
-  flex-direction: column;
-}
-
-#mazowiecka-text1 {
-  font-size: 3.2rem;
-  text-align: left;
-  color: white;
-  line-height: 1;
-}
-
-#mazowiecka-text2 {
-  font-size: 1.1rem;
-  text-align: left;
-  color: white;
-  line-height: 1.5;
-}
-
-#mazowiecka-logo img {
-  width: 170px;
-  height: 170px;
 }
