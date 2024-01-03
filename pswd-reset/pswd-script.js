@@ -6,11 +6,11 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const returnButton = document.getElementById("return-href");
+  const returnButton = document.getElementById("return-option");
 
   returnButton.addEventListener("click", function () {
 
-    document.querySelector(".login-window").classList.add("disappear");
+    document.getElementById("pswd-reset-window").classList.add("disappear");
 
     setTimeout(function () {
       window.location.href = "../login-page/index.html";
