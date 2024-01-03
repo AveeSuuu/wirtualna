@@ -25,5 +25,5 @@ Rok akademicki 2023/24
 
 ## Członkowie zespołu
 
-- Design: [Bartosz Golat 23798](https://github.com/Kaadeusz)
-- Implementacja: [Konrad Niedzielski 23886](https://www.github.com/AveeSuuu)
+- [Bartosz Golat 23798](https://github.com/Kaadeusz) - Design
+- [Konrad Niedzielski 23886](https://www.github.com/AveeSuuu) - Implementacja
