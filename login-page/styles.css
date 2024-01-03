@@ -11,14 +11,25 @@ body {
   /* #002147 */
 }
 
-.main-container {
+#main-container {
   width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-.middle-container {
+#decorative-up {
+  width: 100vw;
+  height: 60px;
+  top: 0px;
+  background: linear-gradient(125deg, #93DEFA 0%, #29A7E1 100%);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  z-index: 2;
+  transition: height 0.5s ease-in-out;
+}
+
+#middle-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,11 +42,11 @@ body {
   transition: opacity 0.5s ease-in-out
 }
 
-.middle-container.disappear{
+#middle-container.disappear {
   opacity: 0;
 }
 
-.login-window {
+#login-window {
   position: fixed;
   width: 60%;
   height: 50%;
@@ -60,12 +71,12 @@ body {
   transition: opacity 0.5s ease-in-out, scale 0.3s ease-in-out;
 }
 
-.login-window.appear {
+#login-window.appear {
   opacity: 1;
   scale: 1;
 }
 
-.login-window.disappear{
+#login-window.disappear {
   opacity: 0;
   scale: 0.7;
   transition: opacity 0.5s ease-in-out, scale 1s ease-in-out;
@@ -80,20 +91,7 @@ body {
   transition: opacity 0.5s ease-in-out;
 }
 
-#bottom {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transition: opacity 0.5s ease-in-out;
-}
-
-#top.disappear{
-  opacity: 0;
-}
-
-#bottom.disappear{
+#top.disappear {
   opacity: 0;
 }
 
@@ -121,9 +119,17 @@ body {
   height: 170px;
 }
 
-#href-login {
-  margin-top: 15px;
-  margin-bottom: 30px;
+#bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s ease-in-out;
+}
+
+#bottom.disappear {
+  opacity: 0;
 }
 
 #input-rows {
@@ -148,6 +154,8 @@ body {
 }
 
 #href-login {
+  margin-top: 15px;
+  margin-bottom: 30px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -191,18 +199,7 @@ body {
   background-color: #f5fcff;
 }
 
-#decorative-up {
-  width: 100vw;
-  height: 60px;
-  top: 0px;
-  background: linear-gradient(125deg, #93DEFA 0%, #29A7E1 100%);
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
-  box-sizing: border-box;
-  z-index: 2;
-  transition: height 0.5s ease-in-out;
-}
-
-.decorative-down {
+#decorative-down {
   width: 100%;
   height: 60px;
   padding-left: 50px;
@@ -218,7 +215,7 @@ body {
   z-index: 2;
 }
 
-.down-corner-text {
+#down-corner-text {
   color: white;
   font-size: 1rem;
   font-family: Segoe UI;

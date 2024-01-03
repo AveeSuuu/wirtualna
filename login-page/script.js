@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   setTimeout(function () {
-    document.querySelector(".login-window").classList.add("appear");
+    document.getElementById("login-window").classList.add("appear");
   }, 500);
 });
 
@@ -14,8 +14,8 @@ document.addEventListener("DOMContentLoaded", function () {
       decorativeUp.style.height = "175px";
     }, 500);
 
-    document.querySelector(".login-window").classList.add("disappear");
-    document.querySelector(".middle-container").classList.add("disappear");
+    document.getElementById("login-window").classList.add("disappear");
+    document.getElementById("middle-container").classList.add("disappear");
 
     setTimeout(function () {
       window.location.href = "../main-page/main-page.html";
