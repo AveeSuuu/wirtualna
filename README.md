@@ -1,5 +1,5 @@
 
-# Projekt - Wirtualna Uczelnia [strona](https://aveesuuu.github.io/wirtualna/login-page/index.html)
+# Projekt - Wirtualna Uczelnia ([strona](https://aveesuuu.github.io/wirtualna/login-page/index.html))
 Redesign wirtulanej uczelnii Akademii Mazowieckiej w Płocku.
 
 Rok akademicki 2023/24
