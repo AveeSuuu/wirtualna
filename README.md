@@ -1,6 +1,6 @@
 
-# Projekt - Wirtualna Uczelnia [@link](https://aveesuuu.github.io/wirtualna/login-page/index.html)
-Redesign wirtulanej uczelnii dla Akademii Mazowieckiej w Płocku.
+# Projekt - Wirtualna Uczelnia [strona](https://aveesuuu.github.io/wirtualna/login-page/index.html)
+Redesign wirtulanej uczelnii Akademii Mazowieckiej w Płocku.
 
 Rok akademicki 2023/24
 
@@ -23,7 +23,7 @@ Rok akademicki 2023/24
 | Contrast | ![#FDC800](https://via.placeholder.com/10/FDC800?text=+) #FDC800 |
 | Contrast_additional | ![#FFE379](https://via.placeholder.com/10/FFE379?text=+) #FFE379 |
 
-## Twórcy
+## Członkowie zespołu
 
 - [@Konrad Niedzielski 23886](https://www.github.com/AveeSuuu)
 - [@Bartosz Golat 23798](https://github.com/Kaadeusz)
